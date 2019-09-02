@@ -29,3 +29,7 @@
 - Class components can specify PropTypes the same, but more common to be declared a static property of a class.  
   
 [04-03-props-in-class-based-components.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/04-03-props-in-class-based-components.html)
+## Conditionally Render A React Component
+- Can logically determine what is rendered using if statement for ternary.  
+  
+[05-02-conditionally-render-a-react-component-with-jsx.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/05-02-conditionally-render-a-react-component-with-jsx.html)
