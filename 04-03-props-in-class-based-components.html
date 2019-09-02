@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Beginner's Guide to React</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://unpkg.com/prop-types@15.6.1/prop-types.js"></script>
+
+    <script type="text/babel">
+      const rootElement = document.getElementById('root');
+      
+      // Example shows use of PropTypes module on a function.
+      // Example also shwos use of isRequired property to run validator even if no arguments are passed on a prop.
+      // function SayHello(props) {
+      //   return (
+      //       <div>
+      //           Hello {props.firstName} {props.lastName}!
+      //       </div>
+      //   )
+      // }
+      
+      // SayHello.propTypes = {
+      //   firstName: PropTypes.string.isRequired,
+      //   lastName: PropTypes.string.isRequired,
+      // }
+      
+      // Example uses PropTypes as a static property of Class SayHello.
+      // Can be used the same as above example.
+      class SayHello extends React.Component {
+        static propTypes = {
+          firstName: PropTypes.string.isRequired,
+          lastName: PropTypes.string.isRequired
+        }
+
+        render() {
+          const {firstName, lastName} = this.props
+          return (
+            <div>
+              Hello {firstName} {lastName}!
+            </div>
+          )
+        }
+      }
+      
+      const element = <SayHello firstName='Jojo' lastName='Potatoes' />;
+
+      ReactDOM.render(element, rootElement);
+    </script>
+  </body>
+</html>
