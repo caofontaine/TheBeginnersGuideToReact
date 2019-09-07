@@ -42,3 +42,6 @@
 - Libraries: Styled Components, Emotion, and Glamorous for solving styling problems in React.
 
 [07-04-styling-components-more-boxes.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/07-04-styling-components-more-boxes.html)
+## Use Event Handlers with React
+
+[08-03-event-handlers-onchange.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/08-03-event-handlers-onchange.html)
