@@ -33,3 +33,8 @@
 - Can logically determine what is rendered using if statement for ternary.  
   
 [05-02-conditionally-render-a-react-component-with-jsx.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/05-02-conditionally-render-a-react-component-with-jsx.html)
+
+## Rerender a React Application
+- Rerendering a React application does the minimal required DOM operations for the re-render.
+
+[06-01-rerender-a-react-application.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/06-01-rerender-a-react-application.html)
