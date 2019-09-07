@@ -45,3 +45,6 @@
 ## Use Event Handlers with React
 
 [08-03-event-handlers-onchange.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/08-03-event-handlers-onchange.html)
+## Use Compontent State with React
+
+[08-03-event-handlers-onchange.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/09-04-component-state-adding-state.html)
