@@ -1,0 +1,160 @@
+<html>
+  <head>
+    <title>Beginner's Guide to React</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/react@16.3.1/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16.3.1/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+    <script src="https://unpkg.com/prop-types@15.6.1/prop-types.js"></script>
+
+    <script type="text/babel">
+      // Performance bottleneck having arrow function in onClick attribute.
+      /*class Counter extends React.Component {
+        constructor(...args) {
+            super(...args)
+            this.state = {count: 0}
+        }
+        render() {
+            return (
+                <button 
+                    onClick={() =>
+                        this.setState(({count}) => ({
+                            count: count +1 ,
+                        }))}
+                >
+                    {this.state.count}
+                </button>
+            )
+        }
+      }*/
+      
+      // Does not work because this is not referencing the handleClick function from the constructor. 
+      /*class Counter extends React.Component {
+        constructor(...args) {
+            super(...args)
+            this.state = {count: 0}
+        }
+        handleClick() {
+            this.setState(({count}) => ({
+                count: count +1 ,
+            }))
+        }
+        render() {
+            return (
+                <button onClick={this.handleClick}>
+                    {this.state.count}
+                </button>
+            )
+        }
+      }*/
+      
+      // Resolve the referencing issue by binding this to onClick event, but can be a performance bottleneck.
+      /*class Counter extends React.Component {
+        constructor(...args) {
+            super(...args)
+            this.state = {count: 0}
+        }
+        handleClick() {
+            this.setState(({count}) => ({
+                count: count +1 ,
+            }))
+        }
+        render() {
+            return (
+                <button onClick={this.handleClick.bind(this)}>
+                    {this.state.count}
+                </button>
+            )
+        }
+      }*/
+      
+      // Resolves the performance bottleneck by creating a new function in the constructor set to the binding.
+      // Can be heavy to maintain if there are a lot of similar ones like this.
+      /*class Counter extends React.Component {
+        constructor(...args) {
+            super(...args)
+            this.state = {count: 0}
+            this.handleClick = this.handleClick.bind(this)
+        }
+        handleClick() {
+            this.setState(({count}) => ({
+                count: count +1 ,
+            }))
+        }
+        render() {
+            return (
+                <button onClick={this.handleClick}>
+                    {this.state.count}
+                </button>
+            )
+        }
+      }*/
+      
+      // Makes all constructor variables/functions public class field.
+      // Since moving them to public class fields makes it identical to the default constructor, no need for constructor function.
+      /*class Counter extends React.Component {
+        state = {count: 0}
+        handleClick = this.handleClick.bind(this)
+        handleClick() {
+            this.setState(({count}) => ({
+                count: count +1 ,
+            }))
+        }
+        render() {
+            return (
+                <button onClick={this.handleClick}>
+                    {this.state.count}
+                </button>
+            )
+        }
+      }*/
+      
+      // Improvement is doing .bind(this) on the function, rather than assigning the bind of the function to a prototype of the function.
+      /*class Counter extends React.Component {
+        state = {count: 0}
+        handleClick = function() {
+            this.setState(({count}) => ({
+                count: count + 1
+            }))
+        }.bind(this)
+        render() {
+            return (
+                <button onClick={this.handleClick}>
+                    {this.state.count}
+                </button>
+            )
+        }
+      }*/
+      
+      // Arrow function has a lexical this which can avoid conflict with using this on the event handler.
+      class Counter extends React.Component {
+        state = {count: 0}
+
+        handleClick = () => {
+          this.setState(({count}) => ({
+            count: count + 1
+          }))
+        }
+
+        render() {
+          return (
+            <button onClick={this.handleClick}>
+              {this.state.count}
+            </button>
+          )
+        }
+      }
+      
+      const element = <Counter />
+      
+      ReactDOM.render(
+        element,
+        document.getElementById('root')
+      )
+
+    </script>
+  </body>
+</html>

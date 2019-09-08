@@ -52,3 +52,6 @@
 - `componentWillUnmount` clears anything needed to be cleared when the component is unmounted or removed from the DOM.
 
 [10-04-component-state-adding-state.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/10-04-component-state-adding-state.html)
+## Use Class Components with React
+
+[11-02-use-class-components-end-result.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/11-02-use-class-components-end-result.html)
