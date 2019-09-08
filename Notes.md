@@ -55,3 +55,7 @@
 ## Use Class Components with React
 
 [11-02-use-class-components-end-result.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/11-02-use-class-components-end-result.html)
+## Manipulate the DOM with React refs
+- Use `ref` attribute to get access to a node in the DOM.
+
+[12-02-manipulate-the-dom-with-react-refs-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/12-02-manipulate-the-dom-with-react-refs-end-point.html)
