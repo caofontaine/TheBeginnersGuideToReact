@@ -66,3 +66,7 @@
 ## Make Dynamic Forms with React
 
 [14-02-make-dynamic-forms-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/14-02-make-dynamic-forms-end-point.html)
+
+## Controlling Form Values with React
+
+[15-02-controlling-form-values-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/15-02-controlling-form-values-end-point.html)
