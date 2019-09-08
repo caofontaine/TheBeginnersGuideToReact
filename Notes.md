@@ -47,4 +47,8 @@
 [08-03-event-handlers-onchange.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/08-03-event-handlers-onchange.html)
 ## Use Compontent State with React
 
-[08-03-event-handlers-onchange.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/09-04-component-state-adding-state.html)
+[09-04-component-state-adding-state.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/09-04-component-state-adding-state.html)
+## Stop Memory Leaks with componentWillUnmount Lifecycle Method in React
+- `componentWillUnmount` clears anything needed to be cleared when the component is unmounted or removed from the DOM.
+
+[10-04-component-state-adding-state.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/10-04-component-state-adding-state.html)
