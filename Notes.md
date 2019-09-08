@@ -59,3 +59,6 @@
 - Use `ref` attribute to get access to a node in the DOM.
 
 [12-02-manipulate-the-dom-with-react-refs-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/12-02-manipulate-the-dom-with-react-refs-end-point.html)
+## Make Basic Forms with React
+
+[13-02-make-basic-forms-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/13-02-make-basic-forms-end-point.html)
