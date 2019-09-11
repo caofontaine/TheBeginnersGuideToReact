@@ -62,11 +62,15 @@
 ## Make Basic Forms with React
 
 [13-02-make-basic-forms-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/13-02-make-basic-forms-end-point.html)
-
 ## Make Dynamic Forms with React
 
 [14-02-make-dynamic-forms-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/14-02-make-dynamic-forms-end-point.html)
-
 ## Controlling Form Values with React
 
 [15-02-controlling-form-values-end-point.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/15-02-controlling-form-values-end-point.html)
+## Use the key prop when Rendering a List with React
+[16-02-use-the-key-prop-when-rendering-a-list-better-example-start.html](https://github.com/caofontaine/TheBeginnersGuideToReact/blob/master/16-02-use-the-key-prop-when-rendering-a-list-better-example-start.html)
+
+## Make HTTP Requests with React
+
+## Build and deploy a React Application
